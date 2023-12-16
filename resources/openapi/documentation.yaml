@@ -1,0 +1,8 @@
+openapi: "3.0.3"
+info:
+  title: "New_Horizons API"
+  description: "New_Horizons API"
+  version: "1.0.0"
+servers:
+- url: "https://New_Horizons"
+paths: {}
