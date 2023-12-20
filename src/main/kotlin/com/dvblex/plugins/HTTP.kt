@@ -9,7 +9,6 @@ import io.ktor.server.plugins.cors.routing.*
 import io.ktor.server.plugins.defaultheaders.*
 import io.ktor.server.plugins.forwardedheaders.*
 import io.ktor.server.plugins.httpsredirect.*
-import io.ktor.server.plugins.openapi.*
 import io.ktor.server.plugins.swagger.*
 import io.ktor.server.routing.*
 
@@ -42,9 +41,6 @@ fun Application.configureHTTP() {
         sslPort = 443
         // 301 Moved Permanently, or 302 Found redirect.
         permanentRedirect = true
-    }
-    routing {
-        openAPI(path = "openapi")
     }
     routing {
         swaggerUI(path = "openapi")
